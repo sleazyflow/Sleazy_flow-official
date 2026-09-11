@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff3b30;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff3b30;
+}
+
+/* SEARCH */
+
+.search {
+    display: flex;
+    gap: 5px;
+}
+
+.search input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.8)
+        );
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.small-title {
+    color: #ff3b30;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #ff3b30;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid white;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background: #181818;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* SERVICES */
+
+.services {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    padding: 30px;
+
+    background: #222;
+
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff3b30;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #000;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+    color: red;
+}
+hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.small-title {
+    color: red;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 95%;
+        height: auto;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 65%;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
