@@ -550,3 +550,60 @@ hero {
         max-width: 280px;
     }
 }
+
+/* 📱 Sleazy Flow Mobile Polish */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .logo img {
+        max-width: 130px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    button,
+    .btn,
+    .button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .social-section {
+        padding: 65px 18px;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .social-links a {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
