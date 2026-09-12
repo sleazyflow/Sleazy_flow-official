@@ -316,3 +316,37 @@ hero {
         width: 90%;
     }
 }
+/* DESIGN SECTION */
+.design {
+    padding: 80px 10%;
+    text-align: center;
+    background: #181818;
+}
+
+.design h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.design p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background: #111;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
