@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sleazyflow.github.io/Sleazy_flow-official/sitemap.xml
