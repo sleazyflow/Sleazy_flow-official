@@ -769,3 +769,95 @@ hero {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
 }
+
+/* =========================
+   Money Making Section
+========================= */
+
+.money-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #0b0b0b;
+    color: white;
+}
+
+.money-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.money-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.money-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.money-card {
+    padding: 30px 25px;
+    background: #181818;
+    border: 1px solid #292929;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.money-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08);
+}
+
+.money-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.money-card p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.money-card .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.money-card .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .money-section {
+        padding: 60px 15px;
+    }
+
+    .money-section h2 {
+        font-size: 30px;
+    }
+
+    .money-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .money-card {
+        padding: 25px 20px;
+    }
+}
