@@ -368,6 +368,25 @@
 <!-- Scroll To Top Button -->
 <button id="scrollTopBtn" title="Go to top">↑</button>
     
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            scrollTopBtn.style.display = "flex";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+    
 </body>
 
 </html>
